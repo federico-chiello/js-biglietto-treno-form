@@ -49,6 +49,12 @@ h1 {
   padding: 5px;
   text-align: center;
 }
+
+input:focus,
+select:focus {
+  background-color: #B91450;
+  color: white;
+}
 /* / first row */
 
 /* second row */

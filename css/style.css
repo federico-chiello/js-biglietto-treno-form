@@ -15,6 +15,10 @@ h1,h2 {
   color: white;
 }
 
+.ms_grey {
+  background-color: grey;
+}
+
 h1 {
   padding: 30px 0;
 }
@@ -90,5 +94,9 @@ select:focus {
   border: 1px solid grey;
 }
 
+#biglietto .informazioni {
+  display: flex;
+  justify-content: flex-start;
+}
 
 /* / informazioni biglietto */

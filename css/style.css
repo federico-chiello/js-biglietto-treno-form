@@ -10,12 +10,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+h1,h2 {
   text-transform: uppercase;
   color: white;
+}
+
+h1 {
   padding: 30px 0;
 }
 
+/* form */
 /* first row */
 .form {
   background-color: white;
@@ -24,6 +28,7 @@ h1 {
   border-radius: 5px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 .form .first-row {
@@ -66,3 +71,24 @@ select:focus {
   margin: 5px;
 }
 /* / second row */
+/* / form */
+
+/* informazioni biglietto */
+#biglietto {
+  background-color: white;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+#biglietto h3 {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#biglietto hr {
+  border: 1px solid grey;
+}
+
+
+/* / informazioni biglietto */

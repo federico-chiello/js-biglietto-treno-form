@@ -95,6 +95,7 @@ select:focus {
 }
 
 #biglietto .informazioni {
+  height: 100px;
   display: flex;
   justify-content: flex-start;
 }

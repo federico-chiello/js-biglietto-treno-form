@@ -17,6 +17,9 @@ function() {
   var scontoOver = prezzoBiglietto * 40 / 100;
   var prezzoScontatoOver = prezzoBiglietto - scontoOver;
   var tipoTariffa = 'Tariffa standard';
+  var min = 90000;
+  var max = 100000;
+  var numeroRandom = Math.floor(Math.random() * (max - min + 1) ) + min;
 
   // calcolo
   if (eta == 'minorenne'){
@@ -31,10 +34,11 @@ function() {
   document.getElementById('nome-passeggero').innerHTML = nomeCognome;
   document.getElementById('offerta').innerHTML = tipoTariffa;
   document.getElementById('carrozza').innerHTML = Math.floor(Math.random()*9) + 1;
+  document.getElementById('codice').innerHTML = numeroRandom;
   document.getElementById('costo').innerHTML = prezzoBiglietto.toFixed(2) + ' ' + '€';
 
-}
-);
+  document.getElementById('biglietto').className = 'visibile';
+});
 
 var buttonAnnulla = document.getElementById("annulla");
 buttonAnnulla.addEventListener('click',
@@ -43,11 +47,12 @@ function() {
   document.getElementById('km').value = '';
   document.getElementById('eta').value = '';
 
-
+  // inserimento informazioni del biglietto del passeggero
   document.getElementById('nome-passeggero').innerHTML = '';
   document.getElementById('offerta').innerHTML = '';
   document.getElementById('carrozza').innerHTML = '';
+  document.getElementById('codice').innerHTML = '';
   document.getElementById('costo').innerHTML = '';
 
-}
-);
+  document.getElementById('biglietto').className = 'non-visibile';
+});

@@ -17,35 +17,46 @@ h1 {
 }
 
 /* first row */
-.form .row {
-  display: flex;
-  justify-content: center;
+.form {
   background-color: white;
   max-width: 1000px;
   margin: auto;
   border-radius: 5px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
 }
 
-.form .row .column {
+.form .first-row {
+  display: flex;
+  justify-content: center;
+}
+
+.form .first-row .column {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 0 30px 30px 30px;
 }
 
-.form .row .column label {
+.form .first-row .column label {
   color: #B91450;
   padding: 10px;
 }
 
-.form .row .column input,
-.form .row .column select {
+.form .first-row .column input,
+.form .first-row .column select {
   border: 1px solid #B91450;
   border-radius: 5px;
   padding: 5px;
   text-align: center;
 }
-
-
-
 /* / first row */
+
+/* second row */
+.form .second-row button{
+  color: #B91450;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 5px;
+}
+/* / second row */

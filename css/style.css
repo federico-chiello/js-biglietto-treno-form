@@ -99,4 +99,13 @@ select:focus {
   justify-content: flex-start;
 }
 
+.non-visibile {
+  opacity: 0;
+  transition: 1s;
+}
+
+.visibile {
+  opacity: 1;
+  transition: 1s;
+}
 /* / informazioni biglietto */

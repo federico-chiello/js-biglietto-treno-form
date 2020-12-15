@@ -5,11 +5,11 @@ buttonGenera.addEventListener('click',
 function() {
   // variabili form
   var nomeCognome = document.getElementById('nome').value;
-  console.log(nomeCognome);
+  // console.log(nomeCognome);
   var chilometri = document.getElementById('km').value;
-  console.log(chilometri);
+  // console.log(chilometri);
   var fasciaEta = document.getElementById('eta').value;
-  console.log(fasciaEta);
+  // console.log(fasciaEta);
 
   var prezzoBiglietto = 0.21 * chilometri;
   var sconto = prezzoBiglietto * 20 / 100;
@@ -39,6 +39,11 @@ function() {
 var buttonAnnulla = document.getElementById("annulla");
 buttonAnnulla.addEventListener('click',
 function() {
+  document.getElementById('nome').value = '';
+  document.getElementById('km').value = '';
+  document.getElementById('eta').value = '';
+
+
   document.getElementById('nome-passeggero').innerHTML = '';
   document.getElementById('offerta').innerHTML = '';
   document.getElementById('carrozza').innerHTML = '';

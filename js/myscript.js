@@ -4,3 +4,5 @@ var chilometri = document.getElementById('km').value;
 console.log(chilometri);
 var fasciaEta = document.getElementById('eta').value;
 console.log(fasciaEta);
+
+document.getElementById('nome-passeggero').innerHTML = nomeCognome;

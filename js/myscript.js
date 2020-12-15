@@ -22,10 +22,10 @@ function() {
   var numeroRandom = Math.floor(Math.random() * (max - min + 1) ) + min;
 
   // calcolo
-  if (eta == 'minorenne'){
+  if (fasciaEta == 'minorenne'){
     prezzoBiglietto = prezzoScontato;
     tipoTariffa = 'Sconto minorenne';
-  } else if (eta == 'over'){
+  } else if (fasciaEta == 'over'){
     prezzoBiglietto = prezzoScontatoOver;
     tipoTariffa = 'Sconto silver';
   }
